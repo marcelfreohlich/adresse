@@ -4,7 +4,7 @@ import os
 app = Flask(__name__)
 
 # Aktiviere CORS für alle Routen
-CORS(app)
+CORS(app origins="https://marcelfreohlich.github.io/Entfernung/")
 
 # Designer-Adressen aus Umgebungsvariablen
 DESIGNERS = [
