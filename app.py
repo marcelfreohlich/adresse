@@ -3,6 +3,9 @@ import os
 
 app = Flask(__name__)
 
+# Aktiviere CORS für alle Routen
+CORS(app)
+
 # Designer-Adressen aus Umgebungsvariablen
 DESIGNERS = [
     {"name": "Michi", "address": os.getenv("DESIGNER_1", "Josef Musser-Straße 11, 2514, Wienersdorf")},
