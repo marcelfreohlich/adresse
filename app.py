@@ -5,7 +5,7 @@ from flask_cors import CORS  # Importiere CORS
 app = Flask(__name__)
 
 # Aktiviere CORS für alle Routen
-CORS(app, origins="https://marcelfreohlich.github.io/Entfernung/")
+CORS(app)
 
 
 # Designer-Adressen aus Umgebungsvariablen
